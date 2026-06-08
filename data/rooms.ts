@@ -1,5 +1,6 @@
 export const rooms = [
   {
+    number: "01",
     slug: "aurora-suite",
     title: "Aurora Suite",
     description: "Panoramic views and ultimate luxury.",
@@ -43,6 +44,7 @@ export const rooms = [
     ],
   },
   {
+    number: "02",
     slug: "nordic-cabin",
     title: "Nordic Cabin",
     description: "Cozy retreat surrounded by nature.",
@@ -107,21 +109,21 @@ export const rooms = [
         description: "Spacious interiors for shared adventures.",
         price: "$269",
         // image: "/summit-family-lodge.png",
-        images: ["/summit-family-lodge.png", "/summit-family-lodge-two.png", "/summit-family-lodge-three.png"],
+        images: ["/skyline-one.png", "/skyline-two.png", "/skyline-three.png"],
       },
       {
         title: "Alpine Gathering House",
         description: "Designed for comfort and connection.",
         price: "$289",
         // image: "/alpine-gathering-house.png",
-        images: ["/alpine-gathering-house.png", "/alpine-gathering-house-two.png", "/alpine-gathering-house-three.png"],
+        images: ["/artic-one.png", "/artic-two.png", "/artic-three.png"],
       },
       {
         title: "Mountain View Residence",
         description: "Panoramic scenery with extra space.",
         price: "$319",
         // image: "/mountain-view-residence.png",
-        images: ["/mountain-view-residence.png", "/mountain-view-residence-two.png", "/mountain-view-residence-three.png"],
+        images: ["/mountain-view.png", "/mountain-view-two.png", "/mountain-view-three.png"],
       },
     ],
   },

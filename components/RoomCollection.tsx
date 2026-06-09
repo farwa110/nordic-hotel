@@ -1,6 +1,8 @@
 import Button from "./Button";
 import type { Room } from "@/data/rooms.ts";
 import RoomImageSlider from "./RoomImageSlider";
+import { ArrowRight, BedDouble, Eye, UsersRound } from "lucide-react";
+import Link from "next/link";
 
 export default function RoomCollection({ room }: { room: Room }) {
   return (
@@ -28,11 +30,32 @@ export default function RoomCollection({ room }: { room: Room }) {
                 <h3 className="mt-3 font-(--font-playfair) text-3xl">{item.title}</h3>
 
                 <p className="mt-3 text-sm text-white/60">{item.description}</p>
+                <div className="mt-5 flex flex-wrap gap-3 text-sm text-white/60">
+                  <span className="flex items-center gap-2 rounded-full border border-white/10 px-3 py-2">
+                    <UsersRound size={15} className="text-[#D4AF37]" />2 Guests
+                  </span>
 
-                <div className="mt-6 flex gap-3">
+                  <span className="flex items-center gap-2 rounded-full border border-white/10 px-3 py-2">
+                    <BedDouble size={15} className="text-[#D4AF37]" />
+                    King Bed
+                  </span>
+
+                  <span className="flex items-center gap-2 rounded-full border border-white/10 px-3 py-2">
+                    <Eye size={15} className="text-[#D4AF37]" />
+                    Scenic View
+                  </span>
+                </div>
+
+                {/* <div className="mt-6 flex gap-3">
                   <Button href={`/booking?room=${item.title}`} variant="primary">
                     Book
                   </Button>
+                </div> */}
+                <div className="mt-6">
+                  <Link href={`/booking?room=${encodeURIComponent(item.title)}`} className="inline-flex items-center gap-2 rounded-full bg-[#D4AF37] px-5 py-2.5 text-sm font-medium text-[#050816] transition-all duration-300 hover:gap-3 hover:bg-[#e4bf45]">
+                    Book
+                    <ArrowRight size={15} />
+                  </Link>
                 </div>
               </div>
             </article>

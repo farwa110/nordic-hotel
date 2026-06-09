@@ -42,3 +42,16 @@ textarea {
   background: var(--aurora);
   color: var(--midnight);
 }
+/** /* Custom styles for date input */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  position: relative;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #050816 inset;
+  -webkit-text-fill-color: white;
+}

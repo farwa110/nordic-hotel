@@ -27,12 +27,12 @@ export default function Hero() {
           <p className="mb-8 max-w-xl text-lg text-white/80">Experience the magic of the Northern Lights from your private retreat surrounded by nature, comfort and elegance.</p>
 
           <div className="flex flex-col gap-4 sm:flex-row">
-            <Button href="#booking" variant="primary">
+            <Button href="/room-grid" variant="primary">
               Book Your Stay
             </Button>
 
-            <Button href="#rooms" variant="tertiary">
-              Explore Rooms
+            <Button href="/#rooms" variant="tertiary">
+              Explore Retreats
             </Button>
           </div>
         </motion.div>

@@ -169,23 +169,3 @@ export const rooms = [
   },
 ];
 export type Room = (typeof rooms)[number];
-// collection: [
-//   {
-//     title: "Alpine View Suite",
-//     description: "A bright mountain-facing retreat for slow mornings.",
-//     price: "$249",
-//     image: "/alpine-view.png",
-//   },
-//   {
-//     title: "Forest Hearth Cabin",
-//     description: "A cozy wooden escape with snowy forest views.",
-//     price: "$199",
-//     image: "/forest-heart.png",
-//   },
-//   {
-//     title: "Lakeside Night Retreat",
-//     description: "A moody lakeside lounge with panoramic views.",
-//     price: "$329",
-//     image: "/lakeside.png",
-//   },
-// ],

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -24,7 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body className={`${inter.variable} ${playfair.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${playfair.variable}`}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="flex items-center">
         {/* Logo */}
         <div className="flex flex-1 justify-start">
-          <a href="#" className="font-(--font-playfair) text-2xl text-white">
+          <a href="/" className="font-(--font-playfair) text-2xl text-white">
             AURORA HAVEN
           </a>
         </div>
@@ -32,23 +32,20 @@ export default function Navbar() {
         <div className="hidden flex-1 justify-center md:flex">
           <ul className="flex gap-8 text-white">
             <li>
-              <a href="#story">Story</a>
+              <a href="/#story">Story</a>
             </li>
             <li>
-              <a href="#rooms">Rooms</a>
+              <a href="/#rooms">Rooms</a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
-            </li>
-            <li>
-              <a href="#booking">Booking</a>
+              <a href="/#experience">Experience</a>
             </li>
           </ul>
         </div>
 
         {/* CTA */}
         <div className="flex flex-1 justify-end">
-          <Button href="#booking" variant="tertiary">
+          <Button href="/room-grid" variant="tertiary">
             Book Now
           </Button>
         </div>

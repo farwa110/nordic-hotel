@@ -13,7 +13,7 @@ export default function RoomHero({ room }: { room: Room }) {
         <div className="max-w-3xl">
           <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Rooms & Suites</p>
 
-          <h1 className="font-(--font-playfair) text-6xl md:text-8xl">{room.title}</h1>
+          <h1 className="aurora-text font-(--font-playfair) text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] text-white">{room.title}</h1>
 
           <p className="mt-6 max-w-2xl text-lg text-white/75">{room.longDescription}</p>
 

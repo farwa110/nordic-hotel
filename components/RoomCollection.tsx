@@ -12,7 +12,7 @@ export default function RoomCollection({ room }: { room: Room }) {
           <div>
             <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Available Retreats</p>
 
-            <h2 className="font-(--font-playfair) text-4xl md:text-6xl">Choose Your Stay</h2>
+            <h2 className="aurora-text font-(--font-playfair) text-4xl md:text-6xl">Choose Your Stay</h2>
             <p className="mt-4 text-white/60">Explore rooms within the {room.title} collection and choose the stay that matches your escape.</p>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function RoomCollection({ room }: { room: Room }) {
               <div className="p-6">
                 <p className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">From {item.price} / Night</p>
 
-                <h3 className="mt-3 font-(--font-playfair) text-3xl">{item.title}</h3>
+                <h3 className=" mt-3 font-(--font-playfair) text-3xl">{item.title}</h3>
 
                 <p className="mt-3 text-sm text-white/60">{item.description}</p>
                 <div className="mt-5 flex flex-wrap gap-3 text-sm text-white/60">

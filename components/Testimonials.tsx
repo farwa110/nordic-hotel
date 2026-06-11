@@ -56,48 +56,6 @@ export default function Testimonials() {
   }, []);
 
   return (
-    // // <section id="experience" className="relative overflow-hidden bg-[#050816] px-6 py-28 text-white md:px-20">
-    // <section id="experience" className="relative overflow-hidden bg-[#050816] px-6 py-28 text-white md:px-20">
-    //   {/* <div className="absolute inset-0 opacity-60">
-    //     <video className="absolute inset-0 h-full w-full object-cover" src="/videos/aurora-hero.mp4" autoPlay muted loop playsInline />
-    //   </div> */}
-    //   <video className="absolute inset-0 h-full w-full object-cover opacity-60" src="/videos/aurora-hero.mp4" autoPlay muted loop playsInline />
-    //   <div className="mx-auto max-w-7xl">
-    //     <p className="text-center text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Guest Stories</p>
-
-    //     <h2 className="mt-4 text-center font-(--font-playfair) text-5xl text-white md:text-6xl">Moments They Remember</h2>
-
-    //     {/* <div className="mx-auto mt-14 max-w-3xl"> */}
-    //     <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl mt-14 max-w-3xl mx-auto">
-    //       <AnimatePresence mode="wait">
-    //         <motion.article key={current} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.5 }} className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
-    //           <div className="flex gap-1 text-[#D4AF37]">
-    //             {[...Array(5)].map((_, index) => (
-    //               <Star key={index} size={16} fill="currentColor" strokeWidth={0} />
-    //             ))}
-    //           </div>
-
-    //           <p className="mt-4 text-5xl text-[#D4AF37]">“</p>
-
-    //           <p className="mt-4 text-lg leading-8 text-white/70">{testimonials[current].quote}</p>
-
-    //           <div className="mt-8 flex items-center gap-4 border-t border-white/10 pt-5">
-    //             <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#7FFFD4]/20 bg-[#7FFFD4]/10">
-    //               <UserRound size={22} className="text-[#7FFFD4]" />
-    //             </div>
-
-    //             <div>
-    //               <p className="font-semibold text-white">{testimonials[current].name}</p>
-
-    //               <p className="text-sm text-white/50">{testimonials[current].location}</p>
-    //             </div>
-    //           </div>
-    //         </motion.article>
-    //       </AnimatePresence>
-    //     </div>
-    //   </div>
-    // </section>
-
     <section id="experience" className="relative overflow-hidden bg-[#050816] px-6 py-28 text-white md:px-20">
       {/* Video */}
       <video className="absolute inset-0 h-full w-full object-cover" src="/videos/aurora-hero.mp4" autoPlay muted loop playsInline />
@@ -109,7 +67,7 @@ export default function Testimonials() {
       <div className="relative z-10 mx-auto max-w-7xl">
         <p className="text-center text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Guest Stories</p>
 
-        <h2 className="mt-4 text-center font-(--font-playfair) text-5xl md:text-6xl text-white">Moments They Remember</h2>
+        <h2 className="aurora-text mt-4 text-center font-(--font-playfair) text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] text-white">Moments They Remember</h2>
 
         {/* Arrows */}
         <div className="mt-8 flex justify-center gap-4">

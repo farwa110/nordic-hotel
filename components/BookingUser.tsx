@@ -60,7 +60,7 @@ export default function BookingUser({ selectedRoom }: BookingUserProps) {
           <div className="mt-6">
             <p className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">Selected Retreat</p>
 
-            <h2 className="mt-3 font-(--font-playfair) text-4xl">{selectedRoom.title}</h2>
+            <h2 className="mt-3 font-(--font-playfair) text-3xl md:text-4xl">{selectedRoom.title}</h2>
 
             <p className="mt-3 text-white/60">{selectedRoom.description}</p>
 

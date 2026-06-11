@@ -96,7 +96,7 @@ export default function Testimonials() {
     //       </AnimatePresence>
     //     </div>
     //   </div>
-    // </section>
+    // </section>text-5xl md:text-6xl
 
     <section id="experience" className="relative overflow-hidden bg-[#050816] px-6 py-28 text-white md:px-20">
       {/* Video */}
@@ -109,7 +109,7 @@ export default function Testimonials() {
       <div className="relative z-10 mx-auto max-w-7xl">
         <p className="text-center text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Guest Stories</p>
 
-        <h2 className="mt-4 text-center font-(--font-playfair) text-5xl md:text-6xl text-white">Moments They Remember</h2>
+        <h2 className="mt-4 text-center font-(--font-playfair) text-5xl md:text-6xl  text-white">Moments They Remember</h2>
 
         {/* Arrows */}
         <div className="mt-8 flex justify-center gap-4">

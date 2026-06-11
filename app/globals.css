@@ -55,3 +55,56 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #050816 inset;
   -webkit-text-fill-color: white;
 }
+/* 
+@keyframes logo-shine {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+.animate-logo-shine {
+  animation: logo-shine 1.4s ease-in-out;
+} */
+.aurora-mark {
+  filter: drop-shadow(0 0 10px rgba(52, 211, 153, 0.45));
+}
+
+.aurora-wave {
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+  animation: aurora-draw 2.4s ease-in-out infinite alternate;
+}
+
+.aurora-wave-delay {
+  animation-delay: 0.5s;
+}
+
+@keyframes aurora-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.aurora-text {
+  background: linear-gradient(90deg, #ffffff, #ffffff, #67e8f9, #34d399, #ffffff);
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: aurora-text-shine 4s ease-in-out infinite;
+}
+
+@keyframes aurora-text-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

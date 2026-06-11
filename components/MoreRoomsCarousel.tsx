@@ -39,11 +39,11 @@ export default function MoreRoomsCarousel({ rooms, selectedRoom }: MoreRoomsCaro
 
   return (
     <section className="mt-20">
-      <div className="mb-8 flex items-end justify-between gap-6">
+      <div className="mb-8 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">Explore More Retreats</p>
+          <p className="text-xs uppercase tracking-[0.25em] text-[#D4AF37] sm:text-sm sm:tracking-[0.3em]">Explore More Retreats</p>
 
-          <h2 className="mt-3 font-(--font-playfair) text-4xl text-white">More rooms you may like</h2>
+          <h2 className="mt-3 max-w-xs font-(--font-playfair) text-3xl leading-tight text-white sm:max-w-none sm:text-4xl">More rooms you may like</h2>
         </div>
 
         <div className="flex gap-3">

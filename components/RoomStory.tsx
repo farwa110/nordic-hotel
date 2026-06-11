@@ -7,7 +7,7 @@ export default function RoomStory({ room }: { room: Room }) {
         <div>
           <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">About This Retreat</p>
 
-          <h2 className="font-(--font-playfair) text-4xl leading-tight md:text-6xl">{room.storyTitle}</h2>
+          <h2 className="aurora-text font-(--font-playfair) text-4xl leading-tight md:text-6xl">{room.storyTitle}</h2>
         </div>
 
         <div>

@@ -21,7 +21,7 @@ import { rooms } from "@/data/rooms";
 
 // (typeof rooms)[0] means:
 
-// "The type of a single object inside the rooms array."
+// "The type of a single object inside the rooms array."text-5xl md:text-7xl
 
 export default function RoomsSection() {
   const [activeRoom, setActiveRoom] = useState(rooms[0]);
@@ -37,7 +37,7 @@ export default function RoomsSection() {
       <div className="relative z-10 mx-auto max-w-7xl">
         <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="mb-16 text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.5em] text-[#D4AF37]">Rooms & Suites</p>
-          <h2 className="font-(--font-playfair) text-5xl md:text-7xl">Choose Your Retreat</h2>
+          <h2 className="aurora-text font-(--font-playfair) text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] text-white">Choose Your Retreat</h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">Find the perfect sanctuary for your Aurora experience.</p>
         </motion.div>
 
@@ -60,7 +60,7 @@ function FeaturedRoomCard({ room }: { room: (typeof rooms)[0] }) {
       {/* <div className="absolute bottom-0 left-0 z-10 p-8 md:p-12"> */}
       <div className="absolute bottom-0 left-0 z-10 p-6 md:p-12">
         {/* <h3 className="font-(--font-playfair) text-4xl md:text-5xl">{room.title}</h3> */}
-        <h3 className="font-(--font-playfair) text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] ">{room.title}</h3>
+        <h3 className="aurora-text font-(--font-playfair) text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] ">{room.title}</h3>
         <p className="mt-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#D4AF37]">From {room.price} / Night</p>
 
         <div className="mt-6 flex flex-wrap gap-6 text-white/80">

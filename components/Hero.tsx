@@ -62,7 +62,7 @@ export default function Hero() {
           <p className="mb-4 text-sm tracking-[0.32em] text-sky-300 uppercase sm:text-base md:tracking-[0.4em]">Nordic Luxury Retreat</p>
 
           {/* <h2 className="mb-6 font-(--font-playfair) text-[36px] md:text-[48px] lg:text-[52px] leading-[0.95] text-white"> */}
-          <h2 className="mb-6 font-(--font-playfair) text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] leading-[0.95] text-white">
+          <h2 className="aurora-text mb-6 font-(--font-playfair) text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] leading-[0.95] text-white">
             Escape Into
             <br />
             Nordic Luxury
@@ -70,17 +70,6 @@ export default function Hero() {
 
           <p className="mb-8 max-w-xl text-base leading-7 text-white/80 sm:text-lg">Experience the magic of the Northern Lights from your private retreat surrounded by nature, comfort and elegance.</p>
 
-          {/* <div className="flex flex-col gap-4 sm:flex-row">
-            <Button href="/room-grid" variant="primary">
-              Book Your Stay
-            </Button>
-
-            <div className="hidden sm:block">
-              <Button href="/#rooms" variant="tertiary">
-                Explore Retreats
-              </Button>
-            </div>
-          </div> */}
           <div className="flex flex-col items-start gap-4 sm:flex-row">
             <Button href="/room-grid" variant="primary">
               Book Your Stay

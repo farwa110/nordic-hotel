@@ -12,7 +12,7 @@ export default async function BookingPage({ searchParams }: { searchParams: Prom
     <main className="min-h-screen bg-[#050816] px-6 py-24 text-white md:px-20 mt-20">
       <p className="mb-3 text-sm uppercase tracking-[0.4em] text-[#D4AF37]">Booking</p>
 
-      <h1 className="font-(--font-playfair) text-5xl md:text-7xl">Reserve Your Stay</h1>
+      <h1 className="font-(--font-playfair) text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] text-white">Reserve Your Stay</h1>
 
       <p className="mt-4 max-w-2xl text-white/60">Complete your reservation request. No online payment is required — you can pay on arrival.</p>
 

@@ -31,7 +31,7 @@ export default function AuroraLogo() {
         <path d="M23 44L32 30L41 44" className="stroke-white/80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
 
-      <span className=" aurora-text font-(--font-playfair) text-xl tracking-[0.08em] text-white sm:text-2xl">AURORA HAVEN</span>
+      <span className="aurora-text font-(--font-playfair) text-xl tracking-[0.08em] text-white sm:text-2xl">AURORA HAVEN</span>
     </div>
   );
 }

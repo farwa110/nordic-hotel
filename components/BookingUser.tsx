@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Button from "./Button";
+// import Button from "./Button";
 import FormField from "./FormField";
 import DateField from "./DateField";
 import LoadingSpinner from "./LoadingSpinner";
@@ -9,6 +9,7 @@ import { calculateNights } from "@/utils/booking";
 import BookingReview from "./BookingReview";
 import ReservationSuccess from "./ReservationSuccess";
 import PaymentNotice from "./PaymentNotice";
+import Image from "next/image";
 
 type Room = {
   title: string;
@@ -56,7 +57,8 @@ export default function BookingUser({ selectedRoom }: BookingUserProps) {
       {selectedRoom && (
         <div className="rounded-3xl border border-white/10 bg-white/3 p-6">
           {/* <img src={selectedRoom.images[0]} alt={selectedRoom.title} className="h-72 w-full rounded-2xl object-cover" /> */}
-          <img src={selectedRoom.images[0]} alt={selectedRoom.title} className="h-96 w-full rounded-2xl object-cover" />
+          {/* <Image src={selectedRoom.images[0]} alt={selectedRoom.title} className="h-96 w-full rounded-2xl object-cover" /> */}
+          <Image src={selectedRoom.images[0]} alt={selectedRoom.title} width={900} height={600} loading="eager" className="h-96 w-full rounded-2xl object-cover" />
           <div className="mt-6">
             <p className="text-sm uppercase tracking-[0.3em] text-[#D4AF37]">Selected Retreat</p>
 

@@ -5,6 +5,7 @@ import { useState } from "react";
 import Button from "./Button";
 import { ArrowRight, Bed, Eye, Users } from "lucide-react";
 import { rooms } from "@/data/rooms";
+import Image from "next/image";
 
 //  Index:   0        1        2        3
 //          ↓        ↓        ↓        ↓
@@ -53,7 +54,7 @@ export default function RoomsSection() {
 function FeaturedRoomCard({ room }: { room: (typeof rooms)[0] }) {
   return (
     <motion.div key={room.title} initial={{ opacity: 0.5 }} animate={{ opacity: 1 }} transition={{ duration: 0.4 }} className="relative min-h-130 overflow-hidden border-white/10 lg:min-h-150 lg:border-r">
-      <img src={room.featuredImage} alt={room.title} className="absolute inset-0 h-full w-full object-cover" />
+      <Image src={room.featuredImage} alt={room.title} width={800} height={500} className="absolute inset-0 h-full w-full object-cover" />
 
       <div className="absolute inset-0 bg-linear-to-t from-[#050816] via-[#050816]/30 to-transparent" />
 
@@ -109,7 +110,7 @@ function RoomList({ activeRoom, setActiveRoom }: { activeRoom: (typeof rooms)[0]
             </div>
 
             <div className="hidden h-24 w-36 overflow-hidden rounded-2xl md:block">
-              <img src={room.image} alt={room.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+              <Image src={room.image} alt={room.title} width={800} height={500} className="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
             </div>
 
             <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 transition group-hover:border-[#D4AF37] group-hover:text-[#D4AF37]">

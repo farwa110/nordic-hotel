@@ -1,5 +1,3 @@
-import Button from "./Button";
-
 type BookingReviewProps = {
   fullName: string;
   email: string;

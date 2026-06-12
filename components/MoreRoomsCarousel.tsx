@@ -1,8 +1,10 @@
 "use client";
 
+// import { useEffect, useState } from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 type Room = {
   title: string;
@@ -19,6 +21,9 @@ type MoreRoomsCarouselProps = {
 export default function MoreRoomsCarousel({ rooms, selectedRoom }: MoreRoomsCarouselProps) {
   const otherRooms = rooms.filter((room) => room.title !== selectedRoom?.title);
   const [current, setCurrent] = useState(0);
+  // const next = useCallback(() => {
+  //   setCurrent((prev) => (prev + 1) % otherRooms.length);
+  // }, [otherRooms.length]);
 
   const visibleRooms = [...otherRooms, ...otherRooms].slice(current, current + 3);
 
@@ -30,12 +35,19 @@ export default function MoreRoomsCarousel({ rooms, selectedRoom }: MoreRoomsCaro
     setCurrent((prev) => (prev - 1 + otherRooms.length) % otherRooms.length);
   }
 
+  // useEffect(() => {
+  //   const timer = setInterval(next, 4500);
+  //   return () => clearInterval(timer);
+  // }, [otherRooms.length]);
+
+  // if (otherRooms.length === 0) return null;
   useEffect(() => {
-    const timer = setInterval(next, 4500);
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % otherRooms.length);
+    }, 4500);
+
     return () => clearInterval(timer);
   }, [otherRooms.length]);
-
-  if (otherRooms.length === 0) return null;
 
   return (
     <section className="mt-20">
@@ -60,7 +72,7 @@ export default function MoreRoomsCarousel({ rooms, selectedRoom }: MoreRoomsCaro
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {visibleRooms.map((room, index) => (
           <article key={`${room.title}-${index}`} className="overflow-hidden rounded-3xl border border-white/10 bg-white/3">
-            <img src={room.images[0]} alt={room.title} className="h-56 w-full object-cover" />
+            <Image src={room.images[0]} alt={room.title} width={800} height={500} className="h-56 w-full object-cover" />
 
             <div className="p-5">
               <p className="text-xs uppercase tracking-[0.25em] text-[#D4AF37]">From {room.price} / Night</p>

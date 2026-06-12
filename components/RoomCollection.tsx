@@ -1,4 +1,3 @@
-import Button from "./Button";
 import type { Room } from "@/data/rooms.ts";
 import RoomImageSlider from "./RoomImageSlider";
 import { ArrowRight, BedDouble, Eye, UsersRound } from "lucide-react";

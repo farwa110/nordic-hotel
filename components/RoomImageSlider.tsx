@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 type RoomImageSliderProps = {
   images: string[];
@@ -21,8 +22,8 @@ export default function RoomImageSlider({ images, title }: RoomImageSliderProps)
 
   return (
     <div className="relative h-72 overflow-hidden">
-      <img src={images[currentImage]} alt={`${title} ${currentImage + 1}`} className="h-full w-full object-cover transition-all duration-500" />
-
+      {/* <Image src={images[currentImage]} alt={`${title} ${currentImage + 1}`} className="h-full w-full object-cover transition-all duration-500" /> */}
+      <Image src={images[currentImage]} alt={`${title} ${currentImage + 1}`} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-all duration-500" />
       {/* Previous Button */}
       <button onClick={prevImage} className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition hover:bg-[#D4AF37] hover:text-black">
         <ChevronLeft size={20} />

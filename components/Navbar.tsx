@@ -12,7 +12,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "Story", href: "/#story" },
-    { label: "Rooms", href: "/#rooms" },
+    { label: "Suites", href: "/#suites" },
     { label: "Experience", href: "/#experience" },
   ];
 

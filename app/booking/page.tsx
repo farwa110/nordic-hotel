@@ -1,11 +1,13 @@
-import { rooms } from "@/data/rooms";
+// import { rooms } from "@/data/rooms";
+import { getRooms } from "@/data/rooms";
+import type { Room } from "@/types/room";
 import BookingUser from "@/components/BookingUser";
 import MoreRoomsCaraousel from "@/components/MoreRoomsCarousel";
 
 export default async function BookingPage({ searchParams }: { searchParams: Promise<{ room?: string }> }) {
   const { room } = await searchParams;
 
-  const allRooms = rooms.flatMap((item) => item.collection);
+  const allRooms = (await getRooms()).flatMap((item) => item.collection);
   const selectedRoom = allRooms.find((item) => item.title === room);
 
   return (

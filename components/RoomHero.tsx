@@ -1,13 +1,13 @@
 import Button from "./Button";
-import type { Room } from "@/data/rooms";
+import type { Room } from "@/types/room";
 import { Bed, Eye, Users } from "lucide-react";
 import Image from "next/image";
 
 export default function RoomHero({ room }: { room: Room }) {
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* <Image src={room.image} alt={room.title} className="absolute inset-0 h-full w-full object-cover" /> */}
       <Image src={room.image} alt={room.title} fill className="object-cover" />
+
       <div className="absolute inset-0 bg-linear-to-t from-[#050816] via-[#050816]/50 to-black/40" />
 
       <div className="relative z-10 flex min-h-screen items-end px-6 pb-20 md:px-20">
@@ -16,7 +16,7 @@ export default function RoomHero({ room }: { room: Room }) {
 
           <h1 className="aurora-text font-(--font-playfair) text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] text-white">{room.title}</h1>
 
-          <p className="mt-6 max-w-2xl text-lg text-white/75">{room.longDescription}</p>
+          <p className="mt-6 max-w-2xl text-lg text-white/75">{room.long_description}</p>
 
           <p className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-[#D4AF37]">From {room.price} / Night</p>
 
@@ -38,7 +38,6 @@ export default function RoomHero({ room }: { room: Room }) {
           </div>
 
           <div className="mt-10">
-            {/* <Button href={`/booking?room=${room.slug}`} variant="primary"> */}
             <Button href="#room-collection" variant="primary">
               Explore Rooms
             </Button>
